@@ -19,17 +19,8 @@
 %Stop indentation on new paragraphs
 \usepackage[parfill]{parskip}
 %% Arial-like font
-\IfFileExists{uarial.sty}
-{
-    \usepackage[english]{babel}
-    \usepackage[T1]{fontenc}
-    \usepackage{uarial}
-    \renewcommand{\familydefault}{\sfdefault}
-}{
-    \GenericError{}{Couldn't find Arial font}{ you may need to install 'nonfree' fonts on your system}{}
-    \usepackage{lmodern}
-    \renewcommand*\familydefault{\sfdefault}
-}
+\usepackage{lmodern}
+\renewcommand*\familydefault{\sfdefault}
 %Napier logo top right
 \usepackage{watermark}
 %Lorem Ipusm dolor please don't leave any in you final report ;)
